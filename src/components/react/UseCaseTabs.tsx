@@ -123,7 +123,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                         </div>
                       ))}
                     </div>
-                    <div className="absolute inset-0 bg-linear-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-900/80 via-slate-900/40 to-transparent pointer-events-none"></div>
                     <div className="absolute top-6 left-6">
                       <div className="w-16 h-16 rounded-xl bg-white/95 backdrop-blur-sm flex items-center justify-center shadow-lg">
                         {IconComponent && (
