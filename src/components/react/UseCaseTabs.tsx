@@ -82,11 +82,11 @@ export default function UseCaseTabs({ useCases }: Props) {
                   <div className="lg:col-span-6 relative h-64 lg:h-auto overflow-hidden">
                     <div className="grid grid-cols-2 gap-0 w-full h-full">
                       {card.images.map((img, imgIdx) => (
-                        <div key={imgIdx} className="relative overflow-hidden group/img">
+                        <div key={imgIdx} className="relative overflow-hidden">
                           <img
                             src={img.src}
                             alt={`${useCase.industry} image ${imgIdx + 1}`}
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                             loading="lazy"
                           />
                         </div>
