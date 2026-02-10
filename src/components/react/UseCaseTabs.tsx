@@ -1,4 +1,5 @@
 import * as Tabs from '@radix-ui/react-tabs';
+import { useState } from 'react';
 import { 
   ShoppingCart, 
   Heart, 
@@ -8,7 +9,10 @@ import {
   UtensilsCrossed,
   CheckCircle2,
   AlertCircle,
-  Lightbulb
+  Lightbulb,
+  X,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 
 interface Card {
@@ -38,6 +42,29 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export default function UseCaseTabs({ useCases }: Props) {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [currentGalleryImages, setCurrentGalleryImages] = useState<any[]>([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openGallery = (images: any[]) => {
+    setCurrentGalleryImages(images);
+    setCurrentImageIndex(0);
+    setIsGalleryOpen(true);
+  };
+
+  const closeGallery = () => {
+    setIsGalleryOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % currentGalleryImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? currentGalleryImages.length - 1 : prev - 1
+    );
+  };
   // Get unique industries
   const industries = Array.from(new Set(useCases.map((uc) => uc.industry)));
 
@@ -82,11 +109,15 @@ export default function UseCaseTabs({ useCases }: Props) {
                   <div className="lg:col-span-6 relative h-64 lg:h-auto overflow-hidden">
                     <div className="grid grid-cols-2 gap-0 w-full h-full">
                       {card.images.map((img, imgIdx) => (
-                        <div key={imgIdx} className="relative overflow-hidden group/image">
+                        <div 
+                          key={imgIdx} 
+                          className="relative overflow-hidden cursor-pointer"
+                          onClick={() => openGallery(card.images)}
+                        >
                           <img
                             src={img.src}
                             alt={`${useCase.industry} image ${imgIdx + 1}`}
-                            className="w-full h-full object-cover group-hover/image:scale-110 transition-transform duration-700"
+                            className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                             loading="lazy"
                           />
                         </div>
@@ -168,6 +199,71 @@ export default function UseCaseTabs({ useCases }: Props) {
           </Tabs.Content>
         );
       })}
+
+      {/* Image Gallery Modal */}
+      {isGalleryOpen && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-auto">
+            <div className="flex items-center justify-between p-6 border-b border-gray-200 sticky top-0 bg-white">
+              <h2 className="text-2xl font-bold text-gray-900">Image Gallery</h2>
+              <button
+                onClick={closeGallery}
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <X className="w-6 h-6 text-gray-600" />
+              </button>
+            </div>
+
+            <div className="p-6">
+              <div className="mb-6">
+                <img
+                  src={currentGalleryImages[currentImageIndex]?.src}
+                  alt="Gallery image"
+                  className="w-full h-96 object-cover rounded-xl"
+                />
+              </div>
+
+              <div className="flex items-center justify-between">
+                <button
+                  onClick={prevImage}
+                  className="p-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <ChevronLeft className="w-6 h-6 text-gray-600" />
+                </button>
+
+                <div className="text-center">
+                  <p className="text-gray-600 font-medium">
+                    {currentImageIndex + 1} / {currentGalleryImages.length}
+                  </p>
+                </div>
+
+                <button
+                  onClick={nextImage}
+                  className="p-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <ChevronRight className="w-6 h-6 text-gray-600" />
+                </button>
+              </div>
+
+              <div className="mt-6 grid grid-cols-4 gap-3">
+                {currentGalleryImages.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img.src}
+                    alt={`Thumbnail ${idx + 1}`}
+                    className={`w-full h-20 object-cover rounded-lg cursor-pointer transition-all ${
+                      idx === currentImageIndex
+                        ? 'ring-2 ring-blue-600 scale-105'
+                        : 'opacity-60 hover:opacity-100'
+                    }`}
+                    onClick={() => setCurrentImageIndex(idx)}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Tabs.Root>
   );
 }
