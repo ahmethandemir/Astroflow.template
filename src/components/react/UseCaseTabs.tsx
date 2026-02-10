@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 
 interface Card {
-  image: { src: string; [key: string]: any };
+  images: { src: string; [key: string]: any }[];
   challenge: string;
   solution: string;
   results: string[];
@@ -80,12 +80,18 @@ export default function UseCaseTabs({ useCases }: Props) {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
                   {/* Image Section */}
                   <div className="lg:col-span-6 relative h-64 lg:h-auto overflow-hidden">
-                    <img
-                      src={card.image.src}
-                      alt={useCase.industry}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      loading="lazy"
-                    />
+                    <div className="grid grid-cols-2 gap-0 w-full h-full">
+                      {card.images.map((img, imgIdx) => (
+                        <div key={imgIdx} className="relative overflow-hidden group/img">
+                          <img
+                            src={img.src}
+                            alt={`${useCase.industry} image ${imgIdx + 1}`}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            loading="lazy"
+                          />
+                        </div>
+                      ))}
+                    </div>
                     <div className="absolute inset-0 bg-linear-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
                     <div className="absolute top-6 left-6">
                       <div className="w-16 h-16 rounded-xl bg-white/95 backdrop-blur-sm flex items-center justify-center shadow-lg">
