@@ -79,7 +79,7 @@ export default function UseCaseTabs({ useCases }: Props) {
               <div key={cardIdx} className="bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
                   {/* Image Section */}
-                  <div className="lg:col-span-5 relative h-64 lg:h-auto overflow-hidden">
+                  <div className="lg:col-span-6 relative h-64 lg:h-auto overflow-hidden">
                     <img
                       src={card.image.src}
                       alt={useCase.industry}
@@ -102,7 +102,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                   </div>
 
                   {/* Content Section */}
-                  <div className="lg:col-span-7 p-8 lg:p-10">
+                  <div className="lg:col-span-6 p-8 lg:p-10">
                     <div className="space-y-6">
                       {/* Challenge */}
                       <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-5">
