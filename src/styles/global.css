@@ -124,3 +124,14 @@ html {
 .btn-primary:hover {
   background-color: #b98f2a;
 }
+
+/* Standard pill/badge with gold background and dark text */
+.pill-gold {
+  @apply inline-block px-4 py-2 mb-4 rounded-full font-semibold;
+  background-color: #D4AF37;
+  color: #111827; /* neutral-900 */
+}
+
+.pill-gold.small {
+  @apply text-sm;
+}
