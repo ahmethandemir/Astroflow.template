@@ -76,13 +76,13 @@ const arrowPath = "M9 5l7 7-7 7";
 <section class="py-24 bg-neutral-800">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <div class="inline-block px-4 py-2 mb-4 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full">
+      <div class="inline-block px-4 py-2 mb-4 bg-teal-100 text-teal-800 text-label rounded-full">
         Nasıl Çalışıyoruz?
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-        İş akış <span class="text-transparent bg-clip-text bg-linear-to-r from-[oklch(0.828_0.189_84.429)] to-teal-600">Süreçlerimiz</span>
+      <h2 class="heading-section text-slate-900">
+        İş akış <span class="gradient-gold-teal">Süreçlerimiz</span>
       </h2>
-      <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-body text-slate-600 max-w-3xl mx-auto">
         A streamlined approach designed to deliver results from day one, with continuous optimization and support.
       </p>
     </div>
@@ -109,11 +109,11 @@ const arrowPath = "M9 5l7 7-7 7";
                 </div>
               </div>
               <div class="p-8 flex flex-col flex-1">
-                <h3 class="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
-                <p class="text-slate-600 leading-relaxed flex-1">
+                <h3 class="heading-subsection text-slate-900 mb-3">{step.title}</h3>
+                <p class="text-body text-slate-600 flex-1">
                   {step.description}
                 </p>
-                <div class={`mt-6 flex items-center text-sm ${step.textColor} font-semibold`}>
+                <div class={`mt-6 flex items-center text-sm ${step.textColor}`}>
                   Daha fazla
                   <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={arrowPath} />

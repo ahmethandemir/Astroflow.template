@@ -58,13 +58,13 @@ const checkmarkPath = "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a
 <section class="py-24 bg-linear-to-b from-slate-50 to-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <div class="inline-block px-4 py-2 mb-4 bg-[oklch(0.828_0.189_84.429)]/20 text-[oklch(0.828_0.189_84.429)] text-sm font-semibold rounded-full">
+      <div class="inline-block px-4 py-2 mb-4 bg-[oklch(0.828_0.189_84.429)]/20 text-[oklch(0.828_0.189_84.429)] text-label rounded-full">
         Industries We Serve
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-        Solutions for <span class="text-transparent bg-clip-text bg-linear-to-r from-[oklch(0.828_0.189_84.429)] to-teal-600">Every Industry</span>
+      <h2 class="heading-section text-slate-900">
+        Solutions for <span class="gradient-gold-teal">Every Industry</span>
       </h2>
-      <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-body text-slate-600 max-w-3xl mx-auto">
         Tailored logistics and manufacturing solutions designed to meet the unique challenges of your industry.
       </p>
     </div>
@@ -77,8 +77,8 @@ const checkmarkPath = "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={industry.iconPath} />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-3">{industry.title}</h3>
-          <p class="text-slate-600 leading-relaxed mb-4">
+          <h3 class="heading-subsection text-slate-900 mb-3">{industry.title}</h3>
+          <p class="text-body text-slate-600 mb-4">
             {industry.description}
           </p>
           <ul class="space-y-2 text-sm text-slate-600">
