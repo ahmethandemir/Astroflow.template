@@ -5,6 +5,11 @@ html {
   @apply scroll-smooth;
 }
 
+/* Global page background (match World-Class Facilities) */
+body {
+  @apply bg-neutral-900 text-white;
+}
+
 .nav-active {
   @apply after:content-[""] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-[oklch(0.828_0.189_84.429)] hover:after:bg-transparent after:rounded-full;
 }
@@ -117,7 +122,7 @@ html {
 
 /* Primary button (gold background, white text) */
 .btn-primary {
-  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md text-black;
+  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md text-white;
   background-color: #D4AF37;
 }
 
