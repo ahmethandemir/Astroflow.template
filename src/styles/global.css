@@ -117,7 +117,7 @@ html {
 
 /* Primary button (gold background, white text) */
 .btn-primary {
-  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md text-white;
+  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md text-black;
   background-color: #D4AF37;
 }
 
