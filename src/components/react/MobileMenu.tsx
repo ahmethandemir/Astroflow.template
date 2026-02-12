@@ -23,7 +23,7 @@ export default function MobileMenu() {
               <Dialog.Close asChild key={item.href}>
                 <a
                   href={item.href}
-                  className="block px-4 py-3 text-base font-medium text-neutral-300 hover:text-blue-400 hover:bg-neutral-700 rounded-lg transition-all"
+                  className="block px-4 py-3 text-base font-medium text-neutral-300 hover:text-[oklch(0.828_0.189_84.429)] hover:bg-neutral-700 rounded-lg transition-all"
                 >
                   {item.name}
                 </a>
