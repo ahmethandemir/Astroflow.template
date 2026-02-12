@@ -39,7 +39,7 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #D4AF37, #0d9488);
+  background: linear-gradient(to right, #D4AF37, #D4AF37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -93,7 +93,7 @@ html {
 
 /* Gold to teal gradient text */
 .gradient-gold-teal {
-  background: linear-gradient(to right, #D4AF37, #0d9488);
+  background: linear-gradient(to right, #D4AF37, #D4AF37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -109,7 +109,7 @@ html {
 
 /* Teal only gradient text */
 .gradient-teal {
-  background: linear-gradient(to right, #0d9488, #14b8a6);
+  background: linear-gradient(to right, #D4AF37, #D4AF37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
