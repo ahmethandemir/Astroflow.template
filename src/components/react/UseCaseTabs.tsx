@@ -79,10 +79,10 @@ export default function UseCaseTabs({ useCases }: Props) {
             <Tabs.Trigger
               key={industry}
               value={industry}
-              className="group px-6 py-3 text-sm font-semibold text-neutral-400 border-b-2 border-transparent hover:text-blue-400 hover:border-blue-400 transition-all duration-200 data-[state=active]:text-blue-400 data-[state=active]:border-blue-400 flex items-center gap-2"
+              className="group px-6 py-3 text-sm font-semibold text-neutral-400 border-b-2 border-transparent hover:text-gold hover:border-gold transition-all duration-200 data-[state=active]:text-gold data-[state=active]:border-gold flex items-center gap-2"
             >
               {IconComponent && (
-                <IconComponent className="w-4 h-4 group-data-[state=active]:text-blue-400" />
+                <IconComponent className="w-4 h-4 group-data-[state=active]:text-gold" />
               )}
               {industry}
             </Tabs.Trigger>
@@ -127,7 +127,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                     <div className="absolute top-6 left-6">
                       <div className="w-16 h-16 rounded-xl bg-neutral-800/95 backdrop-blur-sm flex items-center justify-center shadow-lg">
                         {IconComponent && (
-                          <IconComponent className="w-8 h-8 text-blue-600" />
+                          <IconComponent className="w-8 h-8 text-gold" />
                         )}
                       </div>
                     </div>
@@ -159,9 +159,9 @@ export default function UseCaseTabs({ useCases }: Props) {
                       {/* Solution */}
                       <div className="bg-neutral-900 border-l-4 border-blue-500 rounded-r-lg p-5">
                         <div className="flex items-start gap-3">
-                          <Lightbulb className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                          <Lightbulb className="w-6 h-6 text-gold shrink-0 mt-0.5" />
                           <div>
-                            <h3 className="text-lg font-bold text-blue-400 mb-2">
+                            <h3 className="text-lg font-bold text-gold mb-2">
                               Solution
                             </h3>
                             <p className="text-neutral-300 leading-relaxed">

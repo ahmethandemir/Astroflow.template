@@ -23,7 +23,7 @@ export default function RFQForm() {
       {/* Contact Information */}
       <div>
         <div className="flex items-center mb-6">
-          <div className="w-10 h-10 rounded-lg bg-linear-to-br from-blue-600 to-teal-600 flex items-center justify-center mr-3">
+          <div className="w-10 h-10 rounded-lg bg-gold flex items-center justify-center mr-3 text-neutral-900">
             <User className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900">
@@ -176,20 +176,20 @@ export default function RFQForm() {
                 return (
                   <div
                     key={service.id}
-                    className="flex items-center space-x-3 p-4 border-2 border-gray-200 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-all cursor-pointer group"
+                    className="flex items-center space-x-3 p-4 border-2 border-neutral-700 rounded-lg hover:border-gold hover:bg-gold/10 transition-all cursor-pointer group"
                   >
                     <Checkbox.Root
                       id={service.id}
                       name="services"
                       value={service.id}
-                      className="w-5 h-5 flex items-center justify-center border-2 border-gray-300 rounded data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600 transition-colors shrink-0"
+                      className="w-5 h-5 flex items-center justify-center border-2 border-neutral-600 rounded data-[state=checked]:bg-gold data-[state=checked]:border-gold transition-colors shrink-0"
                     >
                       <Checkbox.Indicator>
                         <Check className="w-4 h-4 text-white" />
                       </Checkbox.Indicator>
                     </Checkbox.Root>
-                    <div className="w-8 h-8 rounded-lg bg-gray-100 group-hover:bg-blue-100 flex items-center justify-center shrink-0 transition-colors">
-                      <IconComponent className="w-4 h-4 text-gray-600 group-hover:text-blue-600 transition-colors" />
+                    <div className="w-8 h-8 rounded-lg bg-neutral-700 group-hover:bg-gold/20 flex items-center justify-center shrink-0 transition-colors">
+                      <IconComponent className="w-4 h-4 text-neutral-400 group-hover:text-gold transition-colors" />
                     </div>
                     <Label.Root
                       htmlFor={service.id}
@@ -275,7 +275,7 @@ export default function RFQForm() {
       <div className="pt-6">
         <button
           type="submit"
-          className="w-full bg-linear-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-teal-700 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
+          className="w-full bg-gold text-neutral-900 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-gold/80 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
         >
           <span>Teklif Talebini Gönder</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
