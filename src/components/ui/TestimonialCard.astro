@@ -17,20 +17,20 @@ const starPath = "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95
 
 // Style variants
 const cardClasses = variant === 'home' 
-  ? "bg-slate-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
-  : "bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col h-full";
+  ? "bg-neutral-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
+  : "bg-neutral-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-neutral-600 flex flex-col h-full";
 
 const quoteClasses = variant === 'home'
-  ? "text-slate-700 mb-6 leading-relaxed flex-1"
-  : "text-gray-700 mb-6 leading-relaxed flex-1";
+  ? "text-neutral-300 mb-6 leading-relaxed flex-1"
+  : "text-neutral-300 mb-6 leading-relaxed flex-1";
 
 const nameClasses = variant === 'home'
-  ? "font-semibold text-slate-900"
-  : "font-semibold text-gray-900";
+  ? "font-semibold text-white"
+  : "font-semibold text-white";
 
 const roleClasses = variant === 'home'
-  ? "text-sm text-slate-600"
-  : "text-sm text-gray-600";
+  ? "text-sm text-neutral-400"
+  : "text-sm text-neutral-400";
 ---
 
 <div class={cardClasses}>

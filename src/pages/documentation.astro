@@ -30,7 +30,7 @@ const docCategories = [
     iconPath: iconPaths.zap,
     image: gettingStartedImg,
     color: 'from-blue-500 to-cyan-500',
-    bgColor: 'bg-blue-50',
+    bgColor: 'bg-neutral-800',
     iconColor: 'text-blue-600',
     docs: [
       { title: 'Quick Start Guide', description: 'Get up and running in minutes with our comprehensive onboarding guide', type: 'PDF', size: '2.4 MB' },
@@ -57,7 +57,7 @@ const docCategories = [
     iconPath: iconPaths.code,
     image: serviceOverviewImg,
     color: 'from-green-500 to-emerald-500',
-    bgColor: 'bg-green-50',
+    bgColor: 'bg-neutral-800',
     iconColor: 'text-green-600',
     docs: [
       { title: 'API Integration Guide', description: 'Connect your systems with our RESTful API endpoints', type: 'PDF', size: '6.2 MB' },
@@ -290,10 +290,10 @@ const faqs = [
                         </span>
                       </div>
                       
-                      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                      <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                         {doc.title}
                       </h3>
-                      <p class="text-sm text-gray-600 mb-4 leading-relaxed">{doc.description}</p>
+                      <p class="text-sm text-neutral-400 mb-4 leading-relaxed">{doc.description}</p>
                       
                       <div class="flex items-center text-xs text-gray-500 mb-4">
                         <span>Size: {doc.size}</span>
@@ -336,7 +336,7 @@ const faqs = [
           <Card hover class="animate-fadeInUp border-2 border-gray-100 hover:border-blue-200 transition-colors" style={`animation-delay: ${index * 0.05}s`}>
             <details class="group">
               <summary class="flex items-center justify-between cursor-pointer list-none py-2">
-                <h3 class="text-lg font-semibold text-gray-900 pr-4 group-hover:text-blue-600 transition-colors">
+                <h3 class="text-lg font-semibold text-white pr-4 group-hover:text-blue-400 transition-colors">
                   {faq.question}
                 </h3>
                 <div class="shrink-0">
@@ -346,7 +346,7 @@ const faqs = [
                 </div>
               </summary>
               <div class="mt-4 pt-4 border-t border-gray-100">
-                <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+                <p class="text-neutral-400 leading-relaxed">{faq.answer}</p>
               </div>
             </details>
           </Card>
@@ -359,10 +359,10 @@ const faqs = [
   <Section background="gradient">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           Need More <span class="gradient-text">Help?</span>
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p class="text-xl text-neutral-300 max-w-3xl mx-auto">
           Our team is here to assist you with any questions or support you need.
         </p>
       </div>

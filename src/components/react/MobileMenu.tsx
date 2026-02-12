@@ -15,7 +15,7 @@ export default function MobileMenu() {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50 z-50 lg:hidden" />
-        <Dialog.Content className="fixed top-0 left-0 right-0 bg-white border-b border-slate-200 z-50 lg:hidden max-h-[85vh] overflow-y-auto">
+        <Dialog.Content className="fixed top-0 left-0 right-0 bg-neutral-800 border-b border-neutral-700 z-50 lg:hidden max-h-[85vh] overflow-y-auto">
           <Dialog.Title className="sr-only">Navigation Menu</Dialog.Title>
           <Dialog.Description className="sr-only">Main navigation menu</Dialog.Description>
           <div className="container mx-auto px-4 py-6 space-y-2">
@@ -23,7 +23,7 @@ export default function MobileMenu() {
               <Dialog.Close asChild key={item.href}>
                 <a
                   href={item.href}
-                  className="block px-4 py-3 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
+                  className="block px-4 py-3 text-base font-medium text-neutral-300 hover:text-blue-400 hover:bg-neutral-700 rounded-lg transition-all"
                 >
                   {item.name}
                 </a>
