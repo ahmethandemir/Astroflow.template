@@ -13,7 +13,7 @@ const isActiveLink = (href: string) : boolean => { return href === currentPathna
     <div class="flex items-center">
       <a href="/" class="flex items-center space-x-3 group">
         <img src="/tanaslogo.png" alt="Tanas Logo" class="h-16 w-auto group-hover:scale-110 transition-transform" />
-        <span class="text-lg font-bold bg-linear-to-r from-[oklch(0.828_0.189_84.429)] to-teal-600 bg-clip-text text-transparent">
+        <span class="text-lg font-bold text-[oklch(0.828_0.189_84.429)]">
           Tanas Fuarcılık
         </span>
       </a>
@@ -26,7 +26,7 @@ const isActiveLink = (href: string) : boolean => { return href === currentPathna
         return (
         <a
           href={item.href}
-          class={`px-4 py-2 text-sm font-medium text-neutral-300 hover:text-[oklch(0.828_0.189_84.429)] hover:bg-neutral-700 rounded-lg transition-all relative group ${isActive ? 'nav-active' : ''}`}
+          class={`px-4 py-2 text-sm font-semibold text-neutral-300 hover:text-[oklch(0.828_0.189_84.429)] hover:bg-neutral-700 rounded-lg transition-all relative group ${isActive ? 'nav-active' : ''}`}
         >
           {item.name}
         </a>
@@ -38,7 +38,7 @@ const isActiveLink = (href: string) : boolean => { return href === currentPathna
     <div class="hidden lg:flex lg:items-center lg:space-x-4">
       <a
         href="/rfq"
-        class="inline-flex items-center px-6 py-2.5 text-sm font-semibold text-white bg-linear-to-r from-[oklch(0.828_0.189_84.429)] to-[oklch(0.828_0.189_84.429)] hover:from-[oklch(0.8_0.189_84.429)] hover:to-[oklch(0.8_0.189_84.429)] rounded-lg shadow-md hover:shadow-lg transition-all"
+        class="inline-flex items-center px-6 py-2.5 text-sm font-bold text-neutral-900 bg-linear-to-r from-[oklch(0.828_0.189_84.429)] to-[oklch(0.828_0.189_84.429)] hover:from-[oklch(0.8_0.189_84.429)] hover:to-[oklch(0.8_0.189_84.429)] rounded-lg shadow-md hover:shadow-lg transition-all"
       >
         Teklif Al
       </a>
