@@ -44,3 +44,73 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Header Styles */
+
+/* Type 1: Hero Heading - Main hero sections (h1) */
+.heading-hero {
+  @apply text-4xl md:text-6xl lg:text-7xl font-bold leading-tight;
+}
+
+/* Type 2: Section Heading - Main section titles (h2) */
+.heading-section {
+  @apply text-4xl md:text-5xl font-bold mb-6;
+}
+
+/* Type 3: Subsection Heading - Card and feature titles (h3) */
+.heading-subsection {
+  @apply text-xl md:text-2xl font-bold;
+}
+
+/* --- Standardized Text Styles --- */
+
+/* Body text for paragraphs */
+.text-body {
+  @apply text-xl leading-relaxed;
+}
+
+/* Secondary body text (lighter color) */
+.text-body-secondary {
+  @apply text-xl leading-relaxed text-slate-300 dark:text-neutral-300;
+}
+
+/* Muted/low-emphasis text */
+.text-muted {
+  @apply text-white/40 dark:text-white/60;
+}
+
+/* Small label/caption text */
+.text-label {
+  @apply text-sm font-semibold uppercase tracking-wider;
+}
+
+/* Stat/metric numbers */
+.text-stat {
+  @apply text-3xl md:text-4xl font-bold;
+}
+
+/* --- Gradient Utilities --- */
+
+/* Gold to teal gradient text */
+.gradient-gold-teal {
+  background: linear-gradient(to right, #D4AF37, #0d9488);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold only gradient text */
+.gradient-gold {
+  background: linear-gradient(to right, #D4AF37, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Teal only gradient text */
+.gradient-teal {
+  background: linear-gradient(to right, #0d9488, #14b8a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
