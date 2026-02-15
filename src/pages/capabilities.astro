@@ -140,7 +140,7 @@ const capabilities = [
   </section>
 
   <!-- Main Capabilities -->
-  <Section background="white">
+  <Section background="white" class="bg-white">
     <!-- Accordion View for Mobile/Compact -->
     <div class="lg:hidden mb-12">
       <CapabilityAccordion capabilities={capabilities} client:load />
@@ -149,7 +149,7 @@ const capabilities = [
     <!-- Grid View for Desktop -->
     <div class="hidden lg:block space-y-24">
       {capabilities.map((capability, index) => (
-        <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+        <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''} bg-white`}> 
           <div class={`${index % 2 === 1 ? 'lg:col-start-2' : ''} animate-fadeInUp`}>
             <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gold text-neutral-900 mb-6 shadow-lg">
               <div class="w-8 h-8" set:html={capability.icon.replace('w-12 h-12', 'w-8 h-8').replace('currentColor', 'currentColor')} />
@@ -251,7 +251,7 @@ const capabilities = [
           </svg>`
         }
       ].map((process, index) => (
-        <Card hover class="text-center animate-fadeInUp group bg-neutral-800 border-neutral-700" style={`animation-delay: ${index * 0.1}s`}>
+        <Card hover class="text-center animate-fadeInUp group bg-white border-neutral-200" style={`animation-delay: ${index * 0.1}s`}>
           <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-xl bg-gold text-neutral-900 shadow-lg group-hover:scale-110 transition-transform">
             <div set:html={process.icon} />
           </div>
