@@ -73,13 +73,13 @@ body {
 /* ============================= */
 /* Dark Headings */
 .heading-hero {
-  @apply text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white;
+  @apply text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-black;
 }
 .heading-section {
-  @apply text-4xl md:text-5xl font-bold mb-6 text-white;
+  @apply text-4xl md:text-5xl font-bold mb-6 text-black;
 }
 .heading-subsection {
-  @apply text-xl md:text-2xl font-bold text-white;
+  @apply text-xl md:text-2xl font-bold text-black;
 }
 /* Light Headings */
 .heading-hero-light {
