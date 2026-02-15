@@ -61,10 +61,10 @@ const checkmarkPath = "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a
       <div class="pill-gold small">
         Industries We Serve
       </div>
-      <h2 class="heading-section text-slate-900">
+      <h2 class="heading-section-light text-slate-900">
         Solutions for <span class="gradient-gold-teal">Every Industry</span>
       </h2>
-      <p class="text-body text-slate-600 max-w-3xl mx-auto">
+      <p class="text-body-light text-slate-600 max-w-3xl mx-auto">
         Tailored logistics and manufacturing solutions designed to meet the unique challenges of your industry.
       </p>
     </div>
@@ -73,12 +73,12 @@ const checkmarkPath = "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a
       {industries.map((industry) => (
         <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-lg transition-all hover:-translate-y-2 border border-slate-200">
           <div class={`w-16 h-16 rounded-xl bg-linear-to-br ${industry.iconGradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-white-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={industry.iconPath} />
             </svg>
           </div>
-          <h3 class="heading-subsection text-slate-900 mb-3">{industry.title}</h3>
-          <p class="text-body text-slate-700 mb-4">
+          <h3 class="heading-subsection-light text-slate-900 mb-3">{industry.title}</h3>
+          <p class="text-body-light text-slate-700 mb-4">
             {industry.description}
           </p>
           <ul class="space-y-2 text-sm text-slate-600">
