@@ -123,19 +123,19 @@ const capabilities = [
     <!-- Content -->
     <div class="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <div class="inline-flex items-center px-4 py-2 mb-6 bg-gold/20 border border-gold text-white text-sm font-semibold rounded-full shadow-lg">
+        <div class="pill-gold mb-6">
           <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
           </svg>
           Kapsamlı Çözümler
         </div>
         
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 class="heading-hero mb-6">
           Hizmetlerimiz<span class="text-gold">
           </span>
       </h1>
         
-        <p class="text-xl md:text-2xl text-slate-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p class="text-body text-body-secondary mb-8 max-w-3xl mx-auto">
         Fikirden kuruluma, tasarımdan uygulamaya kadar fuar, kongre ve markalaşma süreçlerinde uçtan uca çözümler sunuyoruz.
       </p>
       </div>
@@ -157,10 +157,10 @@ const capabilities = [
             <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gold text-neutral-900 mb-6 shadow-lg">
               <div class="w-8 h-8" set:html={capability.icon.replace('w-12 h-12', 'w-8 h-8').replace('currentColor', 'currentColor')} />
             </div>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 class="heading-section-light mb-4">
               {capability.title}
             </h2>
-            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p class="text-body text-body-secondary-light mb-6">
               {capability.description}
             </p>
             <ul class="space-y-3">
@@ -169,7 +169,7 @@ const capabilities = [
                   <svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span class="text-gray-700">{feature}</span>
+                  <span class="text-body-light">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -200,13 +200,13 @@ const capabilities = [
   <!-- Process Section -->
   <Section background="white">
     <div class="text-center mb-16">
-      <div class="inline-block px-4 py-2 mb-4 bg-gold/20 border border-gold text-gold text-sm font-semibold rounded-full">
+      <div class="pill-gold mb-4">
         Yaklaşımımız
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+      <h2 class="heading-section mb-4">
         Çalışma <span class="text-gold">Sürecimiz</span>
       </h2>
-      <p class="text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-body text-body-secondary max-w-3xl mx-auto">
         Nasıl Çalışıyoruz?
       </p>
     </div>
@@ -258,9 +258,9 @@ const capabilities = [
           <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-xl bg-gold text-neutral-900 shadow-lg group-hover:scale-110 transition-transform">
             <div set:html={process.icon} />
           </div>
-          <div class="text-3xl font-bold text-gold mb-2">{process.step}</div>
-          <h3 class="text-xl font-bold text-white mb-3">{process.title}</h3>
-          <p class="text-neutral-300 leading-relaxed">{process.description}</p>
+          <div class="text-stat text-gold mb-2">{process.step}</div>
+          <h3 class="heading-subsection mb-3">{process.title}</h3>
+          <p class="text-body text-body-secondary">{process.description}</p>
         </Card>
       ))}
     </div>
@@ -283,21 +283,21 @@ const capabilities = [
     <!-- Content -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-4xl mx-auto text-center text-white">
-        <div class="inline-block px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm text-white text-sm font-semibold rounded-full">
+        <div class="pill-gold mb-6">
           Bugün başlayalım
         </div>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <h2 class="heading-section mb-6 leading-tight">
           Projenizi <span class="text-gold">birlikte</span> hayata geçirelim.
       </h2>
-        <p class="text-xl md:text-2xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-body text-body-secondary mb-12 max-w-2xl mx-auto">
           Tasarım, üretim ve uygulama süreçlerini tek elden yöneterek markanızı fuar ve etkinlik alanlarında güçlü şekilde temsil ediyoruz.
       </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <Button href="/rfq" size="lg" class="bg-gold! hover:bg-gold/80! text-neutral-900! shadow-2xl!">
+          <Button href="/rfq" size="lg" class="btn-primary">
           Teklif al
         </Button>
-          <Button href="/facilities" size="lg" variant="outline" class="border-2! border-white! text-white! hover:bg-white/10! shadow-2xl!">
+          <Button href="/facilities" size="lg" class="btn-outline-black">
           İletişime geç
         </Button>
         </div>
