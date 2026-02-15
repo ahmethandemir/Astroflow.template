@@ -132,14 +132,20 @@ body {
   background-clip: text;
 }
 
-/* Primary button (gold background, white text) */
+
+/* Primary button (gold background, black text) */
 .btn-primary {
-  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md text-white;
+  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md text-neutral-900;
   background-color: #D4AF37;
 }
 
 .btn-primary:hover {
   background-color: #b98f2a;
+}
+
+/* Black outline button (gold bg, black outline, black text) */
+.btn-outline-black {
+  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md border-2 border-neutral-900 text-neutral-900 bg-[#D4AF37] hover:bg-[#b98f2a];
 }
 
 /* Standard pill/badge with gold background and dark text */
