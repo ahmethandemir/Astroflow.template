@@ -225,20 +225,20 @@ const facilityStandards = [
     <!-- Content -->
     <div class="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <div class="inline-flex items-center px-4 py-2 mb-6 bg-gold/20 border border-gold text-white text-sm font-semibold rounded-full shadow-lg">
+        <div class="pill-gold mb-6">
           <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
           Our Infrastructure
         </div>
         
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 class="heading-hero mb-6">
           Our <span class="text-gold">
             Facilities
           </span>
         </h1>
         
-        <p class="text-xl md:text-2xl text-slate-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p class="text-body text-body-secondary mb-8 max-w-3xl mx-auto">
           Strategically located facilities across North America equipped with state-of-the-art 
           technology and industry certifications.
         </p>
@@ -254,13 +254,13 @@ const facilityStandards = [
   <!-- Facilities Grid -->
   <Section background="gray">
     <div class="text-center mb-16">
-      <div class="inline-block px-4 py-2 mb-4 bg-primary-100 text-primary-800 text-sm font-semibold rounded-full">
+      <div class="pill-gold-light mb-4">
         Our Locations
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h2 class="heading-section-light mb-4">
         Strategic <span class="gradient-text">Facilities</span>
       </h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-body text-body-secondary-light max-w-3xl mx-auto">
         Each facility is designed to meet specific industry needs with cutting-edge infrastructure and capabilities.
       </p>
     </div>
@@ -319,7 +319,7 @@ const facilityStandards = [
                       <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      <span class="text-neutral-400">{feature}</span>
+                      <span class="text-body-secondary-light">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -335,9 +335,7 @@ const facilityStandards = [
                 </h4>
                 <div class="flex flex-wrap gap-2">
                   {facility.certifications.map((cert) => (
-                    <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-linear-to-r from-primary-100 to-secondary-100 text-primary-800 border border-primary-200">
-                      {cert}
-                    </span>
+                    <span class="badge-cert">{cert}</span>
                   ))}
                 </div>
               </div>
@@ -352,13 +350,13 @@ const facilityStandards = [
   <Section background="white">
     <Card class="overflow-hidden">
       <div class="text-center mb-8">
-        <div class="inline-block px-4 py-2 mb-4 bg-primary-100 text-primary-800 text-sm font-semibold rounded-full">
+        <div class="pill-gold-light mb-4">
           Network Coverage
         </div>
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h2 class="heading-section mb-4">
           Strategic <span class="gradient-text">Coverage</span>
         </h2>
-        <p class="text-neutral-300 max-w-2xl mx-auto">
+        <p class="text-body text-body-secondary max-w-2xl mx-auto">
           Our facilities are strategically positioned to provide optimal coverage across North America
         </p>
       </div>
@@ -391,13 +389,13 @@ const facilityStandards = [
   <!-- Facility Standards -->
   <Section background="gradient">
     <div class="text-center mb-16">
-      <div class="inline-block px-4 py-2 mb-4 bg-white/80 backdrop-blur-sm text-primary-800 text-sm font-semibold rounded-full border border-primary-200">
+      <div class="pill-gold-light mb-4">
         Our Standards
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h2 class="heading-section-light mb-4">
         Facility <span class="gradient-text">Standards</span>
       </h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-body text-body-secondary-light max-w-3xl mx-auto">
         Every facility meets our rigorous standards for safety, security, and operational excellence.
       </p>
     </div>
@@ -406,8 +404,8 @@ const facilityStandards = [
       {facilityStandards.map((feature, index) => (
         <Card hover class="text-center animate-fadeInUp group" style={`animation-delay: ${index * 0.1}s`}>
           <div class={`w-16 h-16 mx-auto mb-4 rounded-xl bg-linear-to-br ${feature.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`} set:html={feature.icon}></div>
-          <h3 class="text-lg font-bold text-white mb-2">{feature.title}</h3>
-          <p class="text-neutral-300 text-sm leading-relaxed">{feature.description}</p>
+          <h3 class="heading-subsection mb-2">{feature.title}</h3>
+          <p class="text-body text-body-secondary">{feature.description}</p>
         </Card>
       ))}
     </div>
@@ -430,21 +428,21 @@ const facilityStandards = [
     <!-- Content -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-4xl mx-auto text-center text-white">
-        <div class="inline-block px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm text-white text-sm font-semibold rounded-full">
+        <div class="pill-gold mb-6">
           Get Started Today
         </div>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <h2 class="heading-section mb-6 leading-tight">
           Ready to Visit Our <span class="text-gold">Facilities</span>?
         </h2>
-        <p class="text-xl md:text-2xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-body text-body-secondary mb-12 max-w-2xl mx-auto">
           Schedule a tour to see our operations firsthand and discuss how we can meet your needs.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <Button href="/rfq" size="lg" class="bg-gold! hover:bg-gold/80! text-neutral-900! shadow-2xl!">
+          <Button href="/rfq" size="lg" class="btn-primary">
             Request a Quote
           </Button>
-          <Button href="/capabilities" size="lg" variant="outline" class="border-2! border-white! text-white! hover:bg-white/10! shadow-2xl!">
+          <Button href="/capabilities" size="lg" class="btn-outline-black">
             View Capabilities
           </Button>
         </div>
