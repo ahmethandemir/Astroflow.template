@@ -139,40 +139,108 @@ const capabilities = [
     </div>
   </section>
 
-  <!-- Main Capabilities -->
+  <!-- Main Capabilities (ProcessWorkflow design) -->
   <Section background="white">
     <div class="text-center mb-16">
       <div class="pill-gold">
-        Hizmetlerimiz
+        Nasıl Çalışıyoruz?
       </div>
       <h2 class="heading-section-light">
-        Kapsamlı <span class="gradient-gold-teal">Çözümler</span>
+        İş akış <span class="gradient-gold-teal">Süreçlerimiz</span>
       </h2>
       <p class="text-body-light text-body-secondary max-w-3xl mx-auto">
-        Fikirden kuruluma, tasarımdan uygulamaya kadar fuar, kongre ve markalaşma süreçlerinde uçtan uca çözümler sunuyoruz.
+        A streamlined approach designed to deliver results from day one, with continuous optimization and support.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-      {capabilities.map((capability, index) => (
-        <Card hover class="text-center animate-fadeInUp group bg-white border-neutral-200" style={`animation-delay: ${index * 0.1}s`}>
-          <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-xl bg-gold text-neutral-900 shadow-lg group-hover:scale-110 transition-transform">
-            <div set:html={capability.icon.replace('w-12 h-12', 'w-8 h-8').replace('currentColor', 'currentColor')} />
+    <div class="relative">
+      <!-- Connection Line (hidden on mobile) -->
+      <div class="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-linear-to-r from-[oklch(0.828_0.189_84.429)]/30 via-teal-200 to-[oklch(0.828_0.189_84.429)]/30"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative">
+        {[
+          {
+            number: 1,
+            title: "İhtiyaç Analizi & Brief",
+            description: "Projenin hedeflerini, alan gereksinimlerini ve beklentileri netleştirerek işe başlıyoruz.",
+            image: warehouseImg,
+            alt: "İhtiyaç Analizi ve Brief",
+            hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
+            gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+            textColor: "text-[oklch(0.828_0.189_84.429)]"
+          },
+          {
+            number: 2,
+            title: "Konsept & Tasarım",
+            description: "Markanıza ve etkinliğin ruhuna uygun, yaratıcı ve uygulanabilir tasarımlar geliştiriyoruz.",
+            image: manufacturingImg,
+            alt: "Konsept ve Tasarım",
+            hoverBorder: "hover:border-teal-500",
+            gradient: "from-teal-600/90",
+            textColor: "text-teal-700"
+          },
+          {
+            number: 3,
+            title: "Projelendirme & Onay",
+            description: "Teknik çizimler, ölçülendirme ve uygulama detaylarını netleştirerek onay sürecini tamamlıyoruz.",
+            image: transportationImg,
+            alt: "Projelendirme ve Onay",
+            hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
+            gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+            textColor: "text-[oklch(0.828_0.189_84.429)]"
+          },
+          {
+            number: 4,
+            title: "Üretim & Hazırlık",
+            description: "Onaylanan projeyi kendi üretim ve tedarik süreçlerimizle sahaya hazır hale getiriyoruz.",
+            image: supplyChainImg,
+            alt: "Üretim ve Hazırlık",
+            hoverBorder: "hover:border-teal-500",
+            gradient: "from-teal-600/90",
+            textColor: "text-teal-700"
+          },
+          {
+            number: 5,
+            title: "Kurulum & Uygulama",
+            description: "Sahada zamanında kurulum yapıyor, etkinlik süresince teknik destek sağlıyoruz.",
+            image: technologyIntegrationImg,
+            alt: "Kurulum ve Uygulama",
+            hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
+            gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+            textColor: "text-[oklch(0.828_0.189_84.429)]"
+          }
+        ].map((step, index) => (
+          <div class="relative h-full">
+            <div class={`bg-neutral-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border-2 border-neutral-700 ${step.hoverBorder} relative z-10 flex flex-col h-full`}>
+              <div class="relative h-48 overflow-hidden">
+                <Image 
+                  src={step.image}
+                  alt={step.alt}
+                  class="w-full h-full object-cover"
+                  width={800}
+                  height={400}
+                />
+                <div class={`absolute inset-0 bg-linear-to-t ${step.gradient} to-transparent`}></div>
+                <div class={`absolute top-4 right-4 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center ${step.textColor} font-bold text-xl shadow-lg`}>
+                  {step.number}
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="heading-subsection text-white mb-3">{step.title}</h3>
+                <p class="text-body text-body-secondary flex-1">
+                  {step.description}
+                </p>
+                <div class={`mt-6 flex items-center text-sm ${step.textColor}`}>
+                  Daha fazla
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="heading-subsection-light mb-3">{capability.title}</h3>
-          <p class="text-body-light text-body-secondary mb-6">{capability.description}</p>
-          <ul class="space-y-3">
-            {capability.features.map((feature) => (
-              <li class="flex items-center space-x-3">
-                <svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-body-light">{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
-      ))}
+        ))}
+      </div>
     </div>
   </Section>
 
