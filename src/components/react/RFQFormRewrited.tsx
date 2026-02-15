@@ -70,7 +70,7 @@ export default function RFQForm() {
   };
 
   return (
-    <form className="space-y-6" background="white" id="rfq-form" onSubmit={handleSubmit} name="rfq-form">
+    <form className="space-y-6" id="rfq-form" onSubmit={handleSubmit} name="rfq-form" background="white">
       {/* Contact Information */}
       <div>
         <div className="flex items-center mb-6">
