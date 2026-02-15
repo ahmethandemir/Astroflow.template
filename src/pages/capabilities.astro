@@ -140,56 +140,38 @@ const capabilities = [
   </section>
 
   <!-- Main Capabilities -->
-  <Section background="white" class="bg-white">
-    <!-- Accordion View for Mobile/Compact -->
-    <div class="lg:hidden mb-12">
-      <CapabilityAccordion capabilities={capabilities} client:load />
+  <Section background="white">
+    <div class="text-center mb-16">
+      <div class="pill-gold">
+        Hizmetlerimiz
+      </div>
+      <h2 class="heading-section-light">
+        Kapsamlı <span class="gradient-gold-teal">Çözümler</span>
+      </h2>
+      <p class="text-body-light text-body-secondary max-w-3xl mx-auto">
+        Fikirden kuruluma, tasarımdan uygulamaya kadar fuar, kongre ve markalaşma süreçlerinde uçtan uca çözümler sunuyoruz.
+      </p>
     </div>
-    
-    <!-- Grid View for Desktop -->
-    <div class="hidden lg:block space-y-24">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
       {capabilities.map((capability, index) => (
-        <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''} bg-white`}> 
-          <div class={`${index % 2 === 1 ? 'lg:col-start-2' : ''} animate-fadeInUp`}>
-            <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gold text-neutral-900 mb-6 shadow-lg">
-              <div class="w-8 h-8" set:html={capability.icon.replace('w-12 h-12', 'w-8 h-8').replace('currentColor', 'currentColor')} />
-            </div>
-            <h2 class="heading-section-light mb-4">
-              {capability.title}
-            </h2>
-            <p class="text-body text-body-secondary-light mb-6">
-              {capability.description}
-            </p>
-            <ul class="space-y-3">
-              {capability.features.map((feature) => (
-                <li class="flex items-center space-x-3">
-                  <svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-body-light">{feature}</span>
-                </li>
-              ))}
-            </ul>
+        <Card hover class="text-center animate-fadeInUp group bg-white border-neutral-200" style={`animation-delay: ${index * 0.1}s`}>
+          <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-xl bg-gold text-neutral-900 shadow-lg group-hover:scale-110 transition-transform">
+            <div set:html={capability.icon.replace('w-12 h-12', 'w-8 h-8').replace('currentColor', 'currentColor')} />
           </div>
-          <div class={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-            <ImageReveal client:load delay={index * 0.1}>
-              <div class="relative aspect-4/3 group overflow-hidden rounded-2xl shadow-2xl">
-                <Image 
-                  src={capability.image}
-                  alt={capability.title}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  width={1200}
-                  height={800}
-                />
-                <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-transparent to-transparent"></div>
-                <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <h3 class="text-2xl font-bold mb-2">{capability.title}</h3>
-                  <p class="text-gray-200">{capability.description}</p>
-                </div>
-              </div>
-            </ImageReveal>
-          </div>
-        </div>
+          <h3 class="heading-subsection-light mb-3">{capability.title}</h3>
+          <p class="text-body-light text-body-secondary mb-6">{capability.description}</p>
+          <ul class="space-y-3">
+            {capability.features.map((feature) => (
+              <li class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-body-light">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
       ))}
     </div>
   </Section>
