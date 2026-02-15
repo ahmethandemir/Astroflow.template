@@ -1,3 +1,7 @@
+/* Dark outline button variant */
+.btn-outline-dark {
+  @apply inline-flex items-center px-6 py-3 font-semibold rounded-lg shadow-md border-2 border-neutral-900 text-neutral-900 bg-transparent hover:bg-neutral-100;
+}
 /* Section background utility classes */
 .section-bg-dark {
   @apply bg-neutral-900 text-white;
