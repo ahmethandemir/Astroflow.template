@@ -79,7 +79,7 @@ export default function UseCaseTabs({ useCases }: Props) {
             <Tabs.Trigger
               key={industry}
               value={industry}
-              className="group px-6 py-3 text-sm font-semibold text-body-light-400 border-b-2 border-transparent hover:text-gold hover:border-gold transition-all duration-200 data-[state=active]:text-gold data-[state=active]:border-gold flex items-center gap-2"
+              className="group px-6 py-3 text-sm font-semibold text-body-light border-b-2 border-transparent hover:text-gold hover:border-gold transition-all duration-200 data-[state=active]:text-gold data-[state=active]:border-gold flex items-center gap-2"
             >
               {IconComponent && (
                 <IconComponent className="w-4 h-4 group-data-[state=active]:text-gold" />
