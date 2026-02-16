@@ -237,13 +237,13 @@ export default function RFQForm() {
         {showDetails && (
           <div className="mt-6 space-y-6">
             <div>
-              <Label.Root htmlFor="industry" className="block text-sm font-medium text-neutral-900 mb-2">
+              <Label.Root htmlFor="industry" className="block text-sm font-medium text-white mb-2">
                 Sektör
               </Label.Root>
               <select
                 id="industry"
                 name="industry"
-                className="w-full text-white px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                className="bg-black w-full text-white px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
               >
                 <option value="">Alanınızı seçiniz</option>
                 <option value="teknoloji">Teknoloji</option>
