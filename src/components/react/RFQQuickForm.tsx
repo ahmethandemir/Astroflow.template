@@ -140,7 +140,7 @@ export default function RFQForm() {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-body">Firma Bilgisi</h2>
-            <p className="text-sm text-gray-500 mt-1">Bireyselseniz firma alanına “Bireysel” yazabilirsiniz.</p>
+            <p className="text-sm text-body mt-1">Bireyselseniz firma alanına “Bireysel” yazabilirsiniz.</p>
           </div>
         </div>
 
@@ -165,7 +165,7 @@ export default function RFQForm() {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-body">Hangi Hizmetle İlgileniyorsunuz?</h2>
-            <p className="text-sm text-gray-500 mt-1">Tek seçim yapmanız yeterli. Detayları görüşmede netleştiriyoruz.</p>
+            <p className="text-sm text-body mt-1">Tek seçim yapmanız yeterli. Detayları görüşmede netleştiriyoruz.</p>
           </div>
         </div>
 
@@ -232,7 +232,7 @@ export default function RFQForm() {
           <span className="text-gray-600">{showDetails ? '−' : '+'}</span>
         </button>
 
-        <p className="text-xs text-gray-500 mt-2">Zorunlu değildir. Daha net bir teklif için ekleyebilirsiniz.</p>
+        <p className="text-xs text-body mt-2">Zorunlu değildir. Daha net bir teklif için ekleyebilirsiniz.</p>
 
         {showDetails && (
           <div className="mt-6 space-y-6">
