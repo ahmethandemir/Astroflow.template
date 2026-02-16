@@ -3,7 +3,7 @@ import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide
 
 import warehouseImg from '@assets/photo-1553413077-190dd305871c.jpg';
 import truckImg from '@assets/photo-1601584115197-04ecc0da31d7.jpg';
-import packageImg from '@assets/photo-1581091226825-a6a2a5aee158.jpg';
+import packageImg from '@assets/11.webp';
 import barChart3Img from '@assets/photo-1551288049-bebda4e38f71.jpg';
 import shieldImg from '@assets/photo-1563013544-824ae1b704d3.jpg';
 import headphonesImg from '@assets/photo-1486312338219-ce68d2c6f44d.jpg';
