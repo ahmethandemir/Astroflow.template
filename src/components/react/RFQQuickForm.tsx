@@ -237,7 +237,7 @@ export default function RFQForm() {
         {showDetails && (
           <div className="mt-6 space-y-6">
             <div>
-              <Label.Root htmlFor="industry" className="block text-sm font-medium text-white mb-2">
+              <Label.Root htmlFor="industry" className="block text-sm font-medium text-neutral-900 mb-2">
                 Sektör
               </Label.Root>
               <select
