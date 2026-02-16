@@ -64,7 +64,7 @@ export default function RFQForm() {
           </div>
 
           <div className="flex-1">
-            <h2 className="text-2xl font-bold heading-section">30 Saniyede Ön Teklif Talebi</h2>
+            <h2 className="text-2xl font-bold heading-subsection">30 Saniyede Ön Teklif Talebi</h2>
             <p className="text-sm text-body  mt-1">Temel bilgileri bırakın, projenizi birlikte netleştirelim.</p>
             <p className="text-sm text-green-600 font-medium mt-1">✔ Genellikle 1 iş günü içinde dönüş sağlıyoruz.</p>
           </div>
@@ -316,7 +316,7 @@ export default function RFQForm() {
       <div className="pt-6">
         <button
           type="submit"
-          className="w-full bg-gold text-neutral-900 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-gold/80 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
+          className="btn-primary w-full bg-gold text-body px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-gold/80 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
         >
           <span>Ön Teklifimi Oluştur →</span>
         </button>
