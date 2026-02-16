@@ -35,7 +35,7 @@ export default function MobileMenu() {
                   href="/rfq"
                   className="block text-center px-6 py-3 text-sm font-semibold text-neutral-900 bg-gold hover:bg-gold/80 rounded-lg shadow-md transition-all"
                 >
-                  Request Quote
+                  Teklif Al
                 </a>
               </Dialog.Close>
             </div>

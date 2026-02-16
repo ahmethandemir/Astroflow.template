@@ -12,14 +12,8 @@ const features = [
   {
     icon: Warehouse,
     title: 'Fuar Stand Çözümleri',
-    description: 'Özel tasarım ve modüler stand uygulamaları.',
+    description: 'Özel üretim ve sistem stand çözümleriyle markanızı fuar alanında öne çıkarıyoruz.',
     image: warehouseImg,
-  },
-  {
-    icon: Truck,
-    title: 'Kongre & Konferans Hizmetleri',
-    description: 'Sahne, teknik altyapı ve alan çözümleri.',
-    image: truckImg,
   },
   {
     icon: Package,
@@ -29,21 +23,27 @@ const features = [
   },
   {
     icon: BarChart3,
-    title: 'Mağaza & Showroom Uygulamaları',
-    description: 'Marka kimliğine uygun iç mekân tasarım ve üretimi.',
+    title: 'Baskı & Görsel Uygulamalar',
+    description: 'Dijital baskıdan alan giydirmeye kadar tüm görsel üretim süreçlerini yönetiyoruz.',
     image: barChart3Img,
   },
   {
-    icon: Shield,
-    title: 'Tasarım & Projelendirme',
-    description: '3D tasarım, teknik çizim ve konsept geliştirme.',
-    image: shieldImg,
+    icon: Truck,
+    title: 'Fuar Ekipman & Donanım Kiralama',
+    description: 'TV, mobilya, aydınlatma ve teknik ekipman kiralama hizmetlerini kurulum dahil sağlıyoruz.',
+    image: truckImg,
   },
   {
-    icon: Headphones,
-    title: 'Üretim & Kurulum',
-    description: 'Planlı imalat süreci ve zamanında saha uygulaması.',
-    image: headphonesImg,
+    icon: Truck,
+    title: 'Kongre & Konferans Hizmetleri',
+    description: 'Sahne, teknik altyapı ve alan çözümleri.',
+    image: truckImg,
+  },
+  {
+    icon: Shield,
+    title: 'Tasarım & Projelendirme & Üretim & Kurulum',
+    description: '3D tasarım, teknik çizim ve konsept geliştirme. Planlı imalat süreci ve zamanında saha uygulaması.',
+    image: shieldImg,
   },
 ];
 
