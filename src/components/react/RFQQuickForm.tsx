@@ -245,7 +245,7 @@ export default function RFQForm() {
                 name="industry"
                 className="w-full text-neutral-900 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
               >
-                <option value="">Alanınızı seçiniz</option>
+                <option value="" className="text-white">Alanınızı seçiniz</option>
                 <option value="teknoloji">Teknoloji</option>
                 <option value="oyun-dijital-eglence">Oyun & Dijital Eğlence</option>
                 <option value="perakende">Perakende</option>
