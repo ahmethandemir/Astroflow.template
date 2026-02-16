@@ -65,7 +65,7 @@ export default function RFQForm() {
 
           <div className="flex-1">
             <h2 className="text-2xl font-bold heading-subsection">30 Saniyede Ön Teklif Talebi</h2>
-            <p className="text-sm text-body  mt-1">Temel bilgileri bırakın, projenizi birlikte netleştirelim.</p>
+            <p className="text-sm text-white  mt-1">Temel bilgileri bırakın, projenizi birlikte netleştirelim.</p>
             <p className="text-sm text-green-600 font-medium mt-1">✔ Genellikle 1 iş günü içinde dönüş sağlıyoruz.</p>
           </div>
 
@@ -74,7 +74,7 @@ export default function RFQForm() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <Label.Root htmlFor="firstName" className="block text-sm font-medium text-body mb-2">
+            <Label.Root htmlFor="firstName" className="block text-sm font-medium text-white mb-2">
               Ad <span className="text-red-500">*</span>
             </Label.Root>
             <input
@@ -88,7 +88,7 @@ export default function RFQForm() {
           </div>
 
           <div>
-            <Label.Root htmlFor="lastName" className="block text-sm font-medium text-body mb-2">
+            <Label.Root htmlFor="lastName" className="block text-sm font-medium text-white mb-2">
               Soyad <span className="text-red-500">*</span>
             </Label.Root>
             <input
@@ -102,7 +102,7 @@ export default function RFQForm() {
           </div>
 
           <div>
-            <Label.Root htmlFor="email" className="block text-sm font-medium text-body mb-2">
+            <Label.Root htmlFor="email" className="block text-sm font-medium text-white mb-2">
               E-posta <span className="text-red-500">*</span>
             </Label.Root>
             <input
@@ -116,7 +116,7 @@ export default function RFQForm() {
           </div>
 
           <div>
-            <Label.Root htmlFor="phone" className="block text-sm font-medium text-body mb-2">
+            <Label.Root htmlFor="phone" className="block text-sm font-medium text-white mb-2">
               Telefon <span className="text-red-500">*</span>
             </Label.Root>
             <input
@@ -139,12 +139,12 @@ export default function RFQForm() {
             <Building2 className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-body">Firma Bilgisi</h2>
-            <p className="text-sm text-body mt-1">Bireyselseniz firma alanına “Bireysel” yazabilirsiniz.</p>
+            <h2 className="text-2xl font-bold text-white">Firma Bilgisi</h2>
+            <p className="text-sm text-white mt-1">Bireyselseniz firma alanına “Bireysel” yazabilirsiniz.</p>
           </div>
         </div>
 
-        <Label.Root htmlFor="company" className="block text-sm font-medium text-body mb-2">
+        <Label.Root htmlFor="company" className="block text-sm font-medium text-white mb-2">
           Firma Adı <span className="text-red-500">*</span>
         </Label.Root>
         <input
@@ -164,8 +164,8 @@ export default function RFQForm() {
             <Briefcase className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-body">Hangi Hizmetle İlgileniyorsunuz?</h2>
-            <p className="text-sm text-body mt-1">Tek seçim yapmanız yeterli. Detayları görüşmede netleştiriyoruz.</p>
+            <h2 className="text-2xl font-bold text-white">Hangi Hizmetle İlgileniyorsunuz?</h2>
+            <p className="text-sm text-white mt-1">Tek seçim yapmanız yeterli. Detayları görüşmede netleştiriyoruz.</p>
           </div>
         </div>
 
@@ -209,7 +209,7 @@ export default function RFQForm() {
                   <IconComponent className="w-4 h-4 text-neutral-600 group-hover:text-gold transition-colors" />
                 </div>
 
-                <Label.Root htmlFor={service.id} className="text-sm font-medium text-body cursor-pointer flex-1">
+                <Label.Root htmlFor={service.id} className="text-sm font-medium text-white cursor-pointer flex-1">
                   {service.label}
                 </Label.Root>
               </div>
@@ -232,7 +232,7 @@ export default function RFQForm() {
           <span className="text-gray-600">{showDetails ? '−' : '+'}</span>
         </button>
 
-        <p className="text-xs text-body mt-2">Zorunlu değildir. Daha net bir teklif için ekleyebilirsiniz.</p>
+        <p className="text-xs text-white mt-2">Zorunlu değildir. Daha net bir teklif için ekleyebilirsiniz.</p>
 
         {showDetails && (
           <div className="mt-6 space-y-6">
@@ -260,8 +260,8 @@ export default function RFQForm() {
 
             {/* ✅ Event Date as free text input (not dropdown) */}
             <div>
-              <Label.Root htmlFor="eventDate" className="flex items-center text-sm font-medium text-body mb-2">
-                <Calendar className="w-4 h-4 mr-2 text-body" />
+              <Label.Root htmlFor="eventDate" className="flex items-center text-sm font-medium text-white mb-2">
+                <Calendar className="w-4 h-4 mr-2 text-white" />
                 Etkinlik / Proje Tarihi (aralık)
               </Label.Root>
               <input
@@ -271,14 +271,14 @@ export default function RFQForm() {
                 placeholder="Örn: 12–15 Mayıs 2026 / Mayıs 2026 / Tarih net değil"
                 className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
               />
-              <p className="text-xs text-body mt-2">
+              <p className="text-xs text-white mt-2">
                 Tarih aralığını yazabilirsiniz. Net değilse “Tarih net değil” demeniz yeterli.
               </p>
             </div>
 
             <div>
-              <Label.Root htmlFor="volume" className="flex items-center text-sm font-medium text-body mb-2">
-                <Package className="w-4 h-4 mr-2 text-body" />
+              <Label.Root htmlFor="volume" className="flex items-center text-sm font-medium text-white mb-2">
+                <Package className="w-4 h-4 mr-2 text-white" />
                 Alan Ölçüsü (m²)
               </Label.Root>
 
@@ -290,12 +290,12 @@ export default function RFQForm() {
                   placeholder="Örn: 24 m²"
                   className="w-full px-4 py-2 pl-10 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                 />
-                <Package className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-body pointer-events-none" />
+                <Package className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none" />
               </div>
             </div>
 
             <div>
-              <Label.Root htmlFor="details" className="block text-sm font-medium text-body mb-2">
+              <Label.Root htmlFor="details" className="block text-sm font-medium text-white mb-2">
                 Proje Detayları
               </Label.Root>
 
@@ -316,7 +316,7 @@ export default function RFQForm() {
       <div className="pt-6">
         <button
           type="submit"
-          className="btn-primary w-full bg-gold text-body px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-gold/80 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
+          className="btn-primary w-full bg-gold text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-gold/80 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
         >
           <span>Ön Teklifimi Oluştur →</span>
         </button>
