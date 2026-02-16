@@ -260,8 +260,8 @@ export default function RFQForm() {
 
             {/* ✅ Event Date as free text input (not dropdown) */}
             <div>
-              <Label.Root htmlFor="eventDate" className="flex items-center text-sm font-medium text-gray-700 mb-2">
-                <Calendar className="w-4 h-4 mr-2 text-gray-500" />
+              <Label.Root htmlFor="eventDate" className="flex items-center text-sm font-medium text-body mb-2">
+                <Calendar className="w-4 h-4 mr-2 text-body" />
                 Etkinlik / Proje Tarihi (aralık)
               </Label.Root>
               <input
@@ -271,14 +271,14 @@ export default function RFQForm() {
                 placeholder="Örn: 12–15 Mayıs 2026 / Mayıs 2026 / Tarih net değil"
                 className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
               />
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="text-xs text-body mt-2">
                 Tarih aralığını yazabilirsiniz. Net değilse “Tarih net değil” demeniz yeterli.
               </p>
             </div>
 
             <div>
-              <Label.Root htmlFor="volume" className="flex items-center text-sm font-medium text-gray-700 mb-2">
-                <Package className="w-4 h-4 mr-2 text-gray-500" />
+              <Label.Root htmlFor="volume" className="flex items-center text-sm font-medium text-body mb-2">
+                <Package className="w-4 h-4 mr-2 text-body" />
                 Alan Ölçüsü (m²)
               </Label.Root>
 
@@ -290,12 +290,12 @@ export default function RFQForm() {
                   placeholder="Örn: 24 m²"
                   className="w-full px-4 py-2 pl-10 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                 />
-                <Package className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+                <Package className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-body pointer-events-none" />
               </div>
             </div>
 
             <div>
-              <Label.Root htmlFor="details" className="block text-sm font-medium text-gray-700 mb-2">
+              <Label.Root htmlFor="details" className="block text-sm font-medium text-body mb-2">
                 Proje Detayları
               </Label.Root>
 
