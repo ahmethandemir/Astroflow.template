@@ -64,7 +64,7 @@ export default function RFQForm() {
           </div>
 
           <div className="flex-1">
-            <h2 className="text-2xl font-bold text-gray-900">30 Saniyede Ön Teklif Talebi</h2>
+            <h2 className="text-2xl font-bold text-body">30 Saniyede Ön Teklif Talebi</h2>
             <p className="text-sm text-gray-500 mt-1">Temel bilgileri bırakın, projenizi birlikte netleştirelim.</p>
             <p className="text-sm text-green-600 font-medium mt-1">✔ Genellikle 1 iş günü içinde dönüş sağlıyoruz.</p>
           </div>
