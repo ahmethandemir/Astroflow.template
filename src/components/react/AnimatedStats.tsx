@@ -8,10 +8,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: '99.8%', label: 'Zamanında Teslim', suffix: '+' },
-  { value: '45%', label: 'Giderlerde Tasarruf', suffix: 'M+' },
-  { value: '500+', label: 'Fuar ve Festival Standı', suffix: '%' },
-  { value: '30+', label: 'Ülkeye Hizmet', suffix: '+' },
+  { value: '99.8', label: 'Zamanında Teslim', suffix: '%' },
+  { value: '45', label: 'Giderlerde Tasarruf', suffix: '%' },
+  { value: '500', label: 'Fuar ve Festival Standı', suffix: '+' },
+  { value: '30', label: 'Ülkeye Hizmet', suffix: '+' },
 ];
 
 export default function AnimatedStats() {
