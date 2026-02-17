@@ -134,7 +134,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <h2 className="text-2xl md:text-3xl font-bold mb-2">
-                        {Card.imageTitle}
+                        {card.imageTitle}
                       </h2>
                     </div>
                   </div>
