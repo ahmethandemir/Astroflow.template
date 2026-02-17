@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide-react';
 
 import fuarImg from '@assets/61.webp';
-import ekipmanImg from '@assets/kinghand4.webp';
+import ekipmanImg from '@assets/Kinghand4.webp';
 import reklamImg from '@assets/11.webp';
 import baskiImg from '@assets/baski.webp';
 import tasarimImg from '@assets/CFMoto1.webp';
