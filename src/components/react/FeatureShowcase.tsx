@@ -1,38 +1,37 @@
 import { motion } from 'motion/react';
 import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide-react';
 
-import warehouseImg from '@assets/61.webp';
-import truckImg from '@assets/ekipman.webp';
-import packageImg from '@assets/11.webp';
-import barChart3Img from '@assets/baski.webp';
-import shieldImg from '@assets/CFMoto1.webp';
+import fuarImg from '@assets/61.webp';
+import ekipmanImg from '@assets/kinghand4.webp';
+import reklamImg from '@assets/11.webp';
+import baskiImg from '@assets/baski.webp';
+import tasarimImg from '@assets/CFMoto1.webp';
 import conferenceImg from '@assets/CFMoto1.webp';
-import headphonesImg from '@assets/photo-1486312338219-ce68d2c6f44d.jpg';
 
 const features = [
   {
     icon: Warehouse,
     title: 'Fuar Stand Çözümleri',
     description: 'Özel üretim ve sistem stand çözümleriyle markanızı fuar alanında öne çıkarıyoruz.',
-    image: warehouseImg,
-  },
-  {
-    icon: Package,
-    title: 'Reklam & Tanıtım Üretimleri',
-    description: 'Billboard, dijital baskı ve marka uygulamaları.',
-    image: packageImg,
+    image: fuarImg,
   },
   {
     icon: BarChart3,
     title: 'Baskı & Görsel Uygulamalar',
     description: 'Dijital baskıdan alan giydirmeye kadar tüm görsel üretim süreçlerini yönetiyoruz.',
-    image: barChart3Img,
+    image: baskiImg,
   },
   {
     icon: Truck,
     title: 'Fuar Ekipman & Donanım Kiralama',
     description: 'TV, mobilya, aydınlatma ve teknik ekipman kiralama hizmetlerini kurulum dahil sağlıyoruz.',
-    image: truckImg,
+    image: ekipmanImg,
+  },
+  {
+    icon: Package,
+    title: 'Reklam & Tanıtım Üretimleri',
+    description: 'Billboard, dijital baskı ve marka uygulamaları.',
+    image: reklamImg,
   },
   {
     icon: Truck,
@@ -44,7 +43,7 @@ const features = [
     icon: Shield,
     title: 'Tasarım & Projelendirme & Üretim & Kurulum',
     description: '3D tasarım, teknik çizim ve konsept geliştirme. Planlı imalat süreci ve zamanında saha uygulaması.',
-    image: shieldImg,
+    image: tasarimImg,
   },
 ];
 
