@@ -17,7 +17,6 @@ import {
 
 interface Card {
   images: { src: string; [key: string]: any }[];
-  imageTitle: string;
   challenge: string;
   solution: string;
   results: string[];
@@ -25,6 +24,7 @@ interface Card {
 
 interface UseCase {
   industry: string;
+  imageTitle: string;
   iconName: string;
   cards: Card[];
 }
@@ -117,7 +117,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                         >
                           <img
                             src={img.src}
-                            alt={`${useCase.industry} image ${imgIdx + 1}`}
+                            alt={`${useCase.imageTitle} image ${imgIdx + 1}`}
                             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                             loading="lazy"
                           />
