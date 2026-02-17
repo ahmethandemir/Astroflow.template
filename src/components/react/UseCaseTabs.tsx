@@ -142,11 +142,11 @@ export default function UseCaseTabs({ useCases }: Props) {
                   <div className="lg:col-span-6 p-8 lg:p-10">
                     <div className="space-y-6">
                       {/* Challenge */}
-                      <div className="bg-neutral-900 border-l-4 border-green-500 rounded-r-lg p-5">
+                      <div className="bg-neutral-900 border-l-4 border-yellow-400 rounded-r-lg p-5">
                         <div className="flex items-start gap-3">
-                          <AlertCircle className="w-6 h-6 text-green-600 shrink-0 mt-0.5" />
+                          <AlertCircle className="w-6 h-6 text-yellow-400 shrink-0 mt-0.5" />
                           <div>
-                            <h3 className="text-lg font-bold text-green-400 mb-2">
+                            <h3 className="text-lg font-bold text-yellow-400 mb-2">
                               Talep
                             </h3>
                             <p className="text-neutral-300 leading-relaxed">
@@ -205,7 +205,7 @@ export default function UseCaseTabs({ useCases }: Props) {
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
           <div className="bg-neutral-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-auto">
             <div className="flex items-center justify-between p-6 border-b border-neutral-700 sticky top-0 bg-neutral-900">
-              <h2 className="text-2xl font-bold text-white">Image Gallery</h2>
+              <h2 className="text-2xl font-bold text-white">Proje Görselleri</h2>
               <button
                 onClick={closeGallery}
                 className="p-2 hover:bg-neutral-800 rounded-lg transition-colors"
