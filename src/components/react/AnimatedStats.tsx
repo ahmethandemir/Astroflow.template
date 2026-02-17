@@ -8,10 +8,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: '500', label: 'Global Clients', suffix: '+' },
-  { value: '50', label: 'Million Units Shipped', suffix: 'M+' },
-  { value: '99.9', label: 'On-Time Delivery', suffix: '%' },
-  { value: '15', label: 'Facilities Worldwide', suffix: '+' },
+  { value: '99.8%', label: 'Zamanında Teslim', suffix: '+' },
+  { value: '45%', label: 'Giderlerde Tasarruf', suffix: 'M+' },
+  { value: '500+', label: 'Fuar ve Festival Standı', suffix: '%' },
+  { value: '30+', label: 'Ülkeye Hizmet', suffix: '+' },
 ];
 
 export default function AnimatedStats() {
