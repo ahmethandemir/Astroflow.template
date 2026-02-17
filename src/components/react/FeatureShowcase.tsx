@@ -2,10 +2,11 @@ import { motion } from 'motion/react';
 import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide-react';
 
 import warehouseImg from '@assets/61.webp';
-import truckImg from '@assets/photo-1601584115197-04ecc0da31d7.jpg';
+import truckImg from '@assets/ekipman.webp';
 import packageImg from '@assets/11.webp';
-import barChart3Img from '@assets/photo-1551288049-bebda4e38f71.jpg';
-import shieldImg from '@assets/photo-1563013544-824ae1b704d3.jpg';
+import barChart3Img from '@assets/baski.webp';
+import shieldImg from '@assets/CFMoto1.webp';
+import conferenceImg from '@assets/CFMoto1.webp';
 import headphonesImg from '@assets/photo-1486312338219-ce68d2c6f44d.jpg';
 
 const features = [
@@ -37,7 +38,7 @@ const features = [
     icon: Truck,
     title: 'Kongre & Konferans Hizmetleri',
     description: 'Sahne, teknik altyapı ve alan çözümleri.',
-    image: truckImg,
+    image: conferenceImg,
   },
   {
     icon: Shield,
