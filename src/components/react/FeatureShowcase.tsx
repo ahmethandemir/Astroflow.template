@@ -6,7 +6,7 @@ import ekipmanImg from '@assets/Kinghand4.webp';
 import reklamImg from '@assets/11.webp';
 import baskiImg from '@assets/baski.webp';
 import tasarimImg from '@assets/CFMoto1.webp';
-import conferenceImg from '@assets/CFMoto1.webp';
+import conferenceImg from '@assets/sahne.webp';
 
 const features = [
   {
