@@ -142,11 +142,11 @@ export default function UseCaseTabs({ useCases }: Props) {
                   <div className="lg:col-span-6 p-8 lg:p-10">
                     <div className="space-y-6">
                       {/* Challenge */}
-                      <div className="bg-neutral-900 border-l-4 border-red-500 rounded-r-lg p-5">
+                      <div className="bg-neutral-900 border-l-4 border-green-500 rounded-r-lg p-5">
                         <div className="flex items-start gap-3">
-                          <AlertCircle className="w-6 h-6 text-red-600 shrink-0 mt-0.5" />
+                          <AlertCircle className="w-6 h-6 text-green-600 shrink-0 mt-0.5" />
                           <div>
-                            <h3 className="text-lg font-bold text-red-400 mb-2">
+                            <h3 className="text-lg font-bold text-green-400 mb-2">
                               Talep
                             </h3>
                             <p className="text-neutral-300 leading-relaxed">
@@ -175,7 +175,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                       <div>
                         <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
                           <CheckCircle2 className="w-5 h-5 text-green-500" />
-                          Results
+                          Sonuçlar
                         </h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {card.results.map((result, idx) => (
