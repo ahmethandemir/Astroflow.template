@@ -17,6 +17,7 @@ import {
 
 interface Card {
   images: { src: string; [key: string]: any }[];
+  imageTitle: string;
   challenge: string;
   solution: string;
   results: string[];
@@ -24,7 +25,6 @@ interface Card {
 
 interface UseCase {
   industry: string;
-  imageTitle: string;
   iconName: string;
   cards: Card[];
 }
@@ -134,7 +134,7 @@ export default function UseCaseTabs({ useCases }: Props) {
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <h2 className="text-2xl md:text-3xl font-bold mb-2">
-                        {useCase.imageTitle}
+                        {Card.imageTitle}
                       </h2>
                     </div>
                   </div>
