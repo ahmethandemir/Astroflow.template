@@ -2,6 +2,10 @@
 import { Image } from 'astro:assets';
 import AnimatedStats from '../react/AnimatedStats';
 import logisticsNetworkImg from '@assets/photo-1578575437130-527eed3abbec.jpg';
+import sapLogo from '@assets/sap.jpg';
+import mcKinseyLogo from '@assets/mckinsey.png';
+import deloitteLogo from '@assets/deloitte.jpg';
+import socarLogo from '@assets/socar.webp';
 ---
 
 <section class="section-bg-dark relative py-24 overflow-hidden">
@@ -24,10 +28,10 @@ import logisticsNetworkImg from '@assets/photo-1578575437130-527eed3abbec.jpg';
         Deneyim & Güven
       </div>
       <h2 class="heading-section">
-        Trusted by <span class="text-gold">Industry Leaders</span>
+        Sektör Liderderi <span class="text-gold">Tanas'ı Tercih Ediyor!</span>
       </h2>
-      <p class="text-body text-body-secondary max-w-3xl mx-auto">
-        Delivering measurable results and operational excellence across every metric that matters to your business.
+      <p class="text-body text-body-secondary max-w-4xl mx-auto">
+        16 yılı aşkın süredir, ulusal ve uluslararası birçok organizasyonda projelerimizi başarıyla tamamladık.<br><br> Ulusal ve uluslararası organizasyonlarda aktif olarak görev aldık.
       </p>
     </div>
 
@@ -40,26 +44,44 @@ import logisticsNetworkImg from '@assets/photo-1578575437130-527eed3abbec.jpg';
       </p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* Client logos placeholder */}
+
         <div class="flex items-center justify-center group">
-          <div class="w-36 h-20 bg-white/5 hover:bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center text-white/40 group-hover:text-white/60 text-label transition-all border border-white/10 hover:border-white/20">
-            CLIENT
-          </div>
+            <Image 
+              src={sapLogo}
+              alt="Industry solutions and use cases"
+              class="object-cover"
+              width={200}
+              height={150}
+            />
         </div>
         <div class="flex items-center justify-center group">
-          <div class="w-36 h-20 bg-white/5 hover:bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center text-white/40 group-hover:text-white/60 font-semibold transition-all border border-white/10 hover:border-white/20">
-            CLIENT
-          </div>
+            <Image 
+              src={mcKinseyLogo}
+              alt="Industry solutions and use cases"
+              class="object-cover"
+              width={200}
+              height={150}
+            />
         </div>
         <div class="flex items-center justify-center group">
-          <div class="w-36 h-20 bg-white/5 hover:bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center text-white/40 group-hover:text-white/60 font-semibold transition-all border border-white/10 hover:border-white/20">
-            CLIENT
-          </div>
+            <Image 
+              src={deloitteLogo}
+              alt="Industry solutions and use cases"
+              class="object-cover"
+              width={200}
+              height={150}
+            />
         </div>
         <div class="flex items-center justify-center group">
-          <div class="w-36 h-20 bg-white/5 hover:bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center text-white/40 group-hover:text-white/60 font-semibold transition-all border border-white/10 hover:border-white/20">
-            CLIENT
-          </div>
+            <Image 
+              src={socarLogo}
+              alt="Industry solutions and use cases"
+              class="object-cover"
+              width={200}
+              height={150}
+            />
         </div>
+      </div>
       </div>
     </div>
   </div>

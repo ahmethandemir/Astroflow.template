@@ -26,7 +26,7 @@ const steps = [
     image: discoveryImg,
     alt: "İhtiyaç Analizi ve Brief",
     hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
-    gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+    gradient: "from-[oklch(0.828_0.189_84.429)]/50",
     textColor: "text-[oklch(0.828_0.189_84.429)]"
   },
   {
@@ -36,7 +36,7 @@ const steps = [
     image: implementationImg,
     alt: "Konsept ve Tasarım",
     hoverBorder: "hover:border-teal-500",
-    gradient: "from-teal-600/90",
+    gradient: "from-teal-600/50",
     textColor: "text-teal-700"
   },
   {
@@ -46,7 +46,7 @@ const steps = [
     image: optimizationImg,
     alt: "Projelendirme ve Onay",
     hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
-    gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+    gradient: "from-[oklch(0.828_0.189_84.429)]/50",
     textColor: "text-[oklch(0.828_0.189_84.429)]"
   },
   {
@@ -56,7 +56,7 @@ const steps = [
     image: supportGrowthImg,
     alt: "Üretim ve Hazırlık",
     hoverBorder: "hover:border-teal-500",
-    gradient: "from-teal-600/90",
+    gradient: "from-teal-600/50",
     textColor: "text-teal-700"
   },
   {
@@ -66,7 +66,7 @@ const steps = [
     image: applicationImg,
     alt: "Kurulum ve Uygulama",
     hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
-    gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+    gradient: "from-[oklch(0.828_0.189_84.429)]/50",
     textColor: "text-[oklch(0.828_0.189_84.429)]"
   }
 ];
@@ -114,12 +114,6 @@ const arrowPath = "M9 5l7 7-7 7";
                 <p class="text-body text-body-secondary flex-1">
                   {step.description}
                 </p>
-                <div class={`mt-6 flex items-center text-sm ${step.textColor}`}>
-                  Daha fazla
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={arrowPath} />
-                  </svg>
-                </div>
               </div>
             </div>
           </div>

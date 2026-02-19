@@ -1,12 +1,12 @@
 import { motion } from 'motion/react';
 import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide-react';
 
-import fuarImg from '@assets/61.webp';
+import fuarImg from '@assets/403.jpg';
 import ekipmanImg from '@assets/Kinghand4.webp';
-import reklamImg from '@assets/11.webp';
-import baskiImg from '@assets/baski.webp';
+import reklamImg from '@assets/baski.webp';
+import baskiImg from '@assets/sahne.webp';
 import tasarimImg from '@assets/CFMoto1.webp';
-import conferenceImg from '@assets/sahne.webp';
+import conferenceImg from '@assets/405.jpg';
 
 const features = [
   {
@@ -87,7 +87,7 @@ export default function FeatureShowcase() {
             {/* Content */}
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-200 opacity-90">{feature.description}</p>
+              <p className="text-sm text-white opacity-90">{feature.description}</p>
             </div>
           </div>
         </motion.div>

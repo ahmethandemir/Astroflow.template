@@ -9,10 +9,10 @@ import ImageReveal from '../components/react/ImageReveal';
 
 import fuarImg from '@assets/61.webp';
 import ekipmanImg from '@assets/Kinghand4.webp';
-import reklamImg from '@assets/11.webp';
-import baskiImg from '@assets/baski.webp';
+import reklamImg from '@assets/baski.webp';
+import baskiImg from '@assets/sahne.webp';
 import tasarimImg from '@assets/CFMoto1.webp';
-import conferenceImg from '@assets/sahne.webp';
+import conferenceImg from '@assets/405.jpg';
 import showroomImg from '@assets/27.webp';
 import warehouseImg from '@assets/photo-1566576721346-d4a3b4eaeb55.jpg';
 import manufacturingImg from '@assets/photo-1581091226825-a6a2a5aee158.jpg';
@@ -20,7 +20,7 @@ import transportationImg from '@assets/photo-1601584115197-04ecc0da31d7.jpg';
 import supplyChainImg from '@assets/photo-1460925895917-afdab827c52f.jpg';
 import valueAddedServicesImg from '@assets/photo-1558618666-fcd25c85cd64.jpg';
 import technologyIntegrationImg from '@assets/photo-1558494949-ef010cbdcc31.jpg';
-import heroBgImg from '@assets/photo-1586528116311-ad8dd3c8310d.jpg';
+import heroBgImg from '@assets/206.jpg';
 import ctaBgImg from '@assets/photo-1553413077-190dd305871c.jpg';
 import discoveryImg from '@assets/photo-1454165804606-c3d57bc86b40.jpg';
 import implementationImg from '@assets/photo-1522071820081-009f0129c71c.jpg';
@@ -257,7 +257,7 @@ const capabilities = [
               image: warehouseImg,
               alt: "İhtiyaç Analizi ve Brief",
               hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
-              gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+              gradient: "from-[oklch(0.828_0.189_84.429)]/50",
               textColor: "text-[oklch(0.828_0.189_84.429)]"
             },
             {
@@ -267,7 +267,7 @@ const capabilities = [
               image: implementationImg,
               alt: "Konsept ve Tasarım",
               hoverBorder: "hover:border-teal-500",
-              gradient: "from-teal-600/90",
+              gradient: "from-teal-600/50",
               textColor: "text-teal-700"
             },
             {
@@ -277,7 +277,7 @@ const capabilities = [
               image: optimizationImg,
               alt: "Projelendirme ve Onay",
               hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
-              gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+              gradient: "from-[oklch(0.828_0.189_84.429)]/50",
               textColor: "text-[oklch(0.828_0.189_84.429)]"
             },
             {
@@ -287,7 +287,7 @@ const capabilities = [
               image: supportGrowthImg,
               alt: "Üretim ve Hazırlık",
               hoverBorder: "hover:border-teal-500",
-              gradient: "from-teal-600/90",
+              gradient: "from-teal-600/50",
               textColor: "text-teal-700"
             },
             {
@@ -297,7 +297,7 @@ const capabilities = [
               image: supportGrowthImg,
               alt: "Kurulum ve Uygulama",
               hoverBorder: "hover:border-[oklch(0.828_0.189_84.429)]",
-              gradient: "from-[oklch(0.828_0.189_84.429)]/90",
+              gradient: "from-[oklch(0.828_0.189_84.429)]/50",
               textColor: "text-[oklch(0.828_0.189_84.429)]"
             }
           ].map((step, index) => (
@@ -321,12 +321,7 @@ const capabilities = [
                   <p class="text-body text-body-secondary flex-1">
                     {step.description}
                   </p>
-                  <div class={`mt-6 flex items-center text-sm ${step.textColor}`}>
-                    Daha fazla
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+
                 </div>
               </div>
             </div>

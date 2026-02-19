@@ -9,10 +9,8 @@ export const SITE = {
 export const NAVIGATION = [
   { name: 'Ana Sayfa', href: '/' },
   { name: 'Hizmetlerimiz', href: '/capabilities' },
-  { name: 'Use Cases', href: '/use-cases' },
-  { name: 'Facilities', href: '/facilities' },
+  { name: 'Fuar Stantlarımız', href: '/use-cases' },
   { name: 'Teklif Al', href: '/rfq' },
-  { name: 'Documentation', href: '/documentation' },
 ] as const;
 
 export const SOCIAL_LINKS = {

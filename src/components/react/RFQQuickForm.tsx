@@ -318,13 +318,13 @@ export default function RFQForm() {
           type="submit"
           className="btn-primary w-full bg-gold text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-gold/80 transition-all duration-200 hover:shadow-xl active:scale-95 flex items-center justify-center space-x-2"
         >
-          <span>Ön Teklifimi Oluştur →</span>
+          <span>Bilgi Talebi Gönder →</span>
         </button>
 
         <p className="text-xs text-gray-400 text-center mt-3">Bilgileriniz üçüncü kişilerle paylaşılmaz.</p>
 
         <p className="text-sm text-gray-500 text-center mt-2">
-          By submitting this form, you agree to our Privacy Policy and Terms of Service.
+          Bu formu göndererek <strong>Tanas Fuarcılık</strong>’ın <a href="/privacy-policy" className="underline hover:text-gray-300">Gizlilik Politikası</a>’nı kabul etmiş olursunuz.
         </p>
       </div>
     </form>
