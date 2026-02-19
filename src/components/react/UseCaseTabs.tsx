@@ -145,10 +145,10 @@ export default function UseCaseTabs({ useCases }: Props) {
                       {/* Challenge */}
                       <div className="bg-neutral-900 border-l-4 border-yellow-400 rounded-r-lg p-5">
                         <div className="flex items-start gap-3">
-                          <AlertCircle className="w-6 h-6 text-yellow-400 shrink-0 mt-0.5" />
+                          <AlertCircle className="w-6 h-6 text-gold shrink-0 mt-0.5" />
                           <div>
-                            <h3 className="text-lg font-bold text-yellow-400 mb-2">
-                              Talep
+                            <h3 className="text-lg font-bold text-gold mb-2">
+                              Fuar Adı
                             </h3>
                             <p className="text-neutral-300 leading-relaxed">
                               {card.challenge}
