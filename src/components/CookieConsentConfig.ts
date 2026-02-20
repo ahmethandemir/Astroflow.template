@@ -25,7 +25,7 @@ export const config: CookieConsentConfig = {
       services: {
         ga4: {
           label:
-            '<a href="https://marketingplatform.google.com/about/analytics/terms/us/" target="_blank">Google Analytics 4 (dummy)</a>',
+            '<a href="https://marketingplatform.google.com/about/analytics/terms/us/" target="_blank">Google Analytics 4 </a>',
           onAccept: () => {
             console.log('ga4 accepted');
             // TODO: load ga4
@@ -39,9 +39,7 @@ export const config: CookieConsentConfig = {
             },
           ],
         },
-        another: {
-          label: 'Another one (dummy)',
-        },
+        
       },
     },
   },
@@ -100,6 +98,61 @@ export const config: CookieConsentConfig = {
           ],
         },
       },
+
+      tr: {
+        consentModal: {
+          title: "Çerezleri Kabul Ediyor musunuz?",
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+          acceptAllBtn: 'Hepsini Kabul Et',
+          acceptNecessaryBtn: 'Tümünü Reddet',
+          showPreferencesBtn: 'Tercihleri Yönet',
+          footer:
+            '<a href="#link">Gizlilik Politikası</a>\n<a href="#link">Kullanım Koşulları</a>',
+        },
+        preferencesModal: {
+          title: 'Çerez Tercihleri Merkezi',
+          acceptAllBtn: 'Hepsini Kabul Et',
+          acceptNecessaryBtn: 'Tümünü Reddet',
+          savePreferencesBtn: 'Tercihleri Kaydet',
+          closeIconLabel: 'Modalı Kapat',
+          serviceCounterLabel: 'Servis|Servisler',
+          sections: [
+            {
+              title: 'Çerez Kullanımı',
+              description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              title:
+                'Gerekli Çerezler <span class="pm__badge">Zorunlu Açık</span>',
+              description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+              linkedCategory: 'necessary',
+            },
+            {
+              title: 'İşlevsellik Çerezleri',
+              description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+              linkedCategory: 'functionality',
+            },
+            {
+              title: 'Analytics Çerezleri',
+              description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+              linkedCategory: 'analytics',
+            },
+            {
+              title: 'Daha fazla bilgi',
+              description:
+                'Sorularınız için info@tanasfuar.com',
+            },
+          ],
+        },
+      },
+
+
+
     },
   },
 };
