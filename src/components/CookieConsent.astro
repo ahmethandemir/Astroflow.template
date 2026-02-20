@@ -1,0 +1,48 @@
+---
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
+
+---
+<button type="button" data-cc="show-preferencesModal">Show preferences modal</button>
+
+<script>
+    import { run } from 'vanilla-cookieconsent';
+    import { config } from './CookieConsentConfig';
+
+    const startConsent = () => {
+        // In v3, calling run() multiple times can cause issues.
+        // We check if it's already initialized.
+        if (!document.getElementById('cc-main')) {
+            run(config);
+        }
+    };
+
+    // Wait for the window to be fully loaded to ensure CSS is ready
+    if (document.readyState === 'complete') {
+        startConsent();
+    } else {
+        window.addEventListener('load', startConsent);
+    }
+
+    // For Astro View Transitions
+    document.addEventListener('astro:after-swap', startConsent);
+</script>
+<style>
+  /* Custom styles for the cookie consent banner */
+  .cc-window {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .cc-btn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  
+  .cc-btn:hover {
+    background-color: #777;
+  }
